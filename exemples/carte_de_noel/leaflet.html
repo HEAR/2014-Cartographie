@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>carte_de_noel</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+    <![endif]-->
+    <script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+    <script>
+      function init() {
+          // zoom minimal
+        var mapMinZoom = 0;
+          // zoom maximal
+        var mapMaxZoom = 4;
+          // on crée la carte
+        var map = L.map('map', {
+          maxZoom: mapMaxZoom,
+          minZoom: mapMinZoom,
+          crs: L.CRS.Simple
+        }).setView([0, 0], mapMaxZoom);
+        
+        var mapBounds = new L.LatLngBounds(
+            map.unproject([0, 1792], mapMaxZoom),
+            map.unproject([2560, 0], mapMaxZoom));
+            
+        map.fitBounds(mapBounds);
+          
+        L.tileLayer('{z}/{x}/{y}.png', {
+          minZoom: mapMinZoom, maxZoom: mapMaxZoom,
+          bounds: mapBounds,
+          attribution: '',
+          noWrap: true          
+        }).addTo(map);
+      }
+    </script>
+    <style>
+      html, body, #map { width:100%; height:100%; margin:0; padding:0; }
+        
+        #legende{
+            position: fixed;
+            right: 20px;
+            top:20px;
+            background: #F00;
+            width: 200px;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        .leaflet-control-zoom-out{
+            background-color: #0F0;    
+        }
+    </style>
+  </head>
+  <body onload="init()">
+    
+    
+    <div id="map"></div>
+    
+    <div id="legende">
+
+       <p>La légende le la carte</p>
+    </div>
+  </body>
+</html>
