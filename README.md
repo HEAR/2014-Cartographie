@@ -40,9 +40,11 @@ Le code généré par MapTiler devrait ressembler à ce qui suit (attention c'es
 
 Attention, le code par défaut va cherche les différents fichiers LeafletJS en ligne. Si vous souhaitez pouvoir consulter vos fichiers sans être connecté à Internet, il faudra récupérer les fichiers indiqués dans les balises suivantes, et bien sur mettre à jour leur chemin :
 
-- `<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />`
-- `<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />`
-- `<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>`
+```html
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+```
 
 
 #### Liens utiles ####
