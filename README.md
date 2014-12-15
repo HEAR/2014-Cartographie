@@ -1,6 +1,6 @@
 # Cartographie #
 
-### Année 4 / Sujet 2 « Cartographie » ###
+### Année 3 / Sujet 2 « Cartographie » ###
 
 #### Sujet ####
 
