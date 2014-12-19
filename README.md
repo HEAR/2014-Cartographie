@@ -21,7 +21,7 @@ La production de cette carte respectera la chronologie suivante :
 
 - recherches papiers
 - dessin dans un outil vectoriel (avec mise en place de librairies de symboles et de styles de tracés)
-- intégration dans une page web (possibilité de suivi avec Michel Ravey)
+- intégration dans une page web
 
 #### À propos de LeafletJS ####
 
