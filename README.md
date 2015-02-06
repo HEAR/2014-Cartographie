@@ -23,7 +23,10 @@ La production de cette carte respectera la chronologie suivante :
 - dessin dans un outil vectoriel (avec mise en place de librairies de symboles et de styles de tracés)
 - intégration dans une page web
 
-#### À propos de LeafletJS ####
+
+## Faire une carte personnalisée avec des dimensions en pixels ##
+
+### À propos de LeafletJS ###
 
 Pour générer le code nécessaire à votre fichier HTML, et générer les vignettes aux différentes résolutions, vous pouvez utiliser l'outil [MapTiler](http://www.maptiler.org). Celui ci est disponible dans une version gratuite(mais qui affiche un watermark dans vos images), et utilisable sur un système os X, Windows ou Linux.
 
@@ -51,15 +54,12 @@ Attention, le code par défaut va chercher les différents fichiers LeafletJS en
 ```
 
 
-## Faire une carte personnalisée avec des dimensions en pixels ##
-
 
 ### Générer la carte ###
 
 Vous pouvez générer les différentes **tuiles** avec un script dans le terminal de votre ordinateur en utilisant un programme nommé imagemagick (cf le tutorial sur cette page : [http://omarriott.com/aux/leaflet-js-non-geographical-imagery/](http://omarriott.com/aux/leaflet-js-non-geographical-imagery/)).
 
 Néanmoins cette méthode peut être assez technique. Vous pouvez également utiliser un programme comme [MapTiler](http://www.maptiler.org). Celui ci s'occupe de générer toutes les vignettes de votre carte, ainsi que le fichier html nécessaire à l'utilisation de leafletJS. Attention, dans sa version gratuite, le programme ne permet pas de gérer des images dont les dimensions sont supérieures à 10240 pixels. Les *tuile* auront également un watermark "maptiler" inscrit dessus.
-
 
 ### Placer un marqueur avec des coordonnées en pixels ###
 
