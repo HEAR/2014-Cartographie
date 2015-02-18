@@ -9,7 +9,7 @@ Si l’on reprend la définition du mot _devise_ communiquée pour le sujet « P
 En accord avec vos recherches pour votre monnaie, vous réaliserez une cartographie de son territoire.
 Vous pouvez vous baser sur des éléments géographiques existants ou penser une topographie et des territoires complètement imaginaires.
 
-Cette cartographie sera pensée pour être visible dans une page web (nous verrons le fonctionnement de l’outil [LeafletJS](http://leafletjs.com)).
+Cette cartographie sera pensée pour être visible dans une page web (nous verrons le fonctionnement de l’outil [LeafletJS](http://leafletjs.com).
 À cet effet, vous devrez produire les éléments suivants :
 
 - au minimum 2 niveaux d’échelle dans votre carte (correspondant à 2 niveaux de zooms différents)
